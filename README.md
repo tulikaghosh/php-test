@@ -28,7 +28,7 @@ All this should happen automatically and should be triggered from a push to the 
 - Set up the necessary tools such as **git, chromedriver(selenium), chromium browser(selenium)** on the slave node through **Ansible**
 - Use the image **devopsedu/webapp** and add your **PHP website** to it using a **Dockerfile**
 - Create a **Selenium** Test for your PHP website. It should click on “About” and verify the text written in it. This will conclude the website is deployed and is running fine.
-- Push the **PHP website, Dockerfile and Selenium JAR** to a **git repository** 
+- Push the PHP website, Dockerfile and Selenium JAR to a **git** repository 
 ### Below tasks should be automated through Jenkins by creating a pipeline:
 - Install and configure puppet agent on the slave node 
 - Sign the puppet certificate on master using Jenkins

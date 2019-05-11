@@ -12,14 +12,14 @@ Implement Continuous Integration & Continuous Deployment with DevOps using follo
 
 Link for the sample PHP application: https://github.com/edureka-devops/projCert.git
 
-##Business challenge/requirement
+## Business challenge/requirement
 As soon as the developer pushes the updated code on the GIT master branch, a new test server should be provisioned with all the 
 required software. Post this, the code should be containerized and deployed on the test server.
 The deployment should then be tested using a test automation tool, and if the build is successful,
 it should be pushed to the prod server.
 All this should happen automatically and should be triggered from a push to the GitHub master branch.  
 
-##Steps for executing the solution:
+## Steps for executing the solution:
 - Use the Master **VM** for **Jenkins, Ansible, Puppet, GIT **etc.
 - Use the Clean **Ubuntu VM** for **Jenkins Slave** Node (Test Server)
 - Change the **IP address** of the VMs accordingly
@@ -29,7 +29,7 @@ All this should happen automatically and should be triggered from a push to the 
 - Use the image **devopsedu/webapp** and add your **PHP website** to it using a **Dockerfile**
 - Create a **Selenium** Test for your PHP website. It should click on “About” and verify the text written in it. This will conclude the website is deployed and is running fine.
 - Push the **PHP website, Dockerfile and Selenium JAR** to a **git repository** 
-###Below tasks should be automated through Jenkins by creating a pipeline:
+### Below tasks should be automated through Jenkins by creating a pipeline:
 - Install and configure puppet agent on the slave node 
 - Sign the puppet certificate on master using Jenkins
 - Trigger the puppet agent on test server to install docker 

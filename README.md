@@ -30,9 +30,9 @@ All this should happen automatically and should be triggered from a push to the 
 -Create a **Selenium** Test for your PHP website. It should click on “About” and verify the text written in it. This will conclude the website is deployed and is running fine.
 -Push the **PHP website, Dockerfile and Selenium JAR** to a **git repository** 
 ###Below tasks should be automated through Jenkins by creating a pipeline:
-1.Install and configure puppet agent on the slave node 
-2.Sign the puppet certificate on master using Jenkins
-3.Trigger the puppet agent on test server to install docker 
-4.Pull the PHP website, Dockerfile and Selenium JAR from your git repo and build and deploy your PHP docker container. After this test the deployment using Selenium JAR file. 
-5.If Job 4 fails, delete the running container on Test Server.
+-1.Install and configure puppet agent on the slave node 
+-2.Sign the puppet certificate on master using Jenkins
+-3.Trigger the puppet agent on test server to install docker 
+-4.Pull the PHP website, Dockerfile and Selenium JAR from your git repo and build and deploy your PHP docker container. After this test the deployment using Selenium JAR file. 
+-5.If Job 4 fails, delete the running container on Test Server.
 

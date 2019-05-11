@@ -20,7 +20,7 @@ it should be pushed to the prod server.
 All this should happen automatically and should be triggered from a push to the GitHub master branch.  
 
 ## Steps for executing the solution:
-- Use the Master **VM** for **Jenkins, Ansible, Puppet, GIT **etc.
+- Use the Master **VM** for **Jenkins, Ansible, Puppet, GIT** etc.
 - Use the Clean **Ubuntu VM** for **Jenkins Slave** Node (Test Server)
 - Change the **IP address** of the VMs accordingly
 - Add Build Pipeline Plugin and Post-build task plugin to Jenkins on the master VM
